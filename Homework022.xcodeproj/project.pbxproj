@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062008D827759FBE0021DA9E /* BallDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062008D727759FBE0021DA9E /* BallDetailViewController.swift */; };
 		06DC58D52774612F000BFC9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DC58D42774612F000BFC9B /* AppDelegate.swift */; };
 		06DC58D72774612F000BFC9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DC58D62774612F000BFC9B /* SceneDelegate.swift */; };
 		06DC58D92774612F000BFC9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DC58D82774612F000BFC9B /* ViewController.swift */; };
 		06DC58DC2774612F000BFC9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DC58DA2774612F000BFC9B /* Main.storyboard */; };
 		06DC58DE27746130000BFC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DC58DD27746130000BFC9B /* Assets.xcassets */; };
 		06DC58E127746130000BFC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DC58DF27746130000BFC9B /* LaunchScreen.storyboard */; };
+		06DC58EA277462C2000BFC9B /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 06DC58E9277462C2000BFC9B /* CodableCSV */; };
+		06DC58EC27746890000BFC9B /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DC58EB27746890000BFC9B /* Ball.swift */; };
+		06DC58EE27747868000BFC9B /* BallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DC58ED27747868000BFC9B /* BallTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		062008D727759FBE0021DA9E /* BallDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDetailViewController.swift; sourceTree = "<group>"; };
 		06DC58D12774612F000BFC9B /* Homework022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DC58D42774612F000BFC9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06DC58D62774612F000BFC9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		06DC58DD27746130000BFC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06DC58E027746130000BFC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06DC58E227746130000BFC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DC58EB27746890000BFC9B /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		06DC58ED27747868000BFC9B /* BallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06DC58EA277462C2000BFC9B /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,9 @@
 				06DC58D62774612F000BFC9B /* SceneDelegate.swift */,
 				06DC58D82774612F000BFC9B /* ViewController.swift */,
 				06DC58DA2774612F000BFC9B /* Main.storyboard */,
+				062008D727759FBE0021DA9E /* BallDetailViewController.swift */,
+				06DC58ED27747868000BFC9B /* BallTableViewCell.swift */,
+				06DC58EB27746890000BFC9B /* Ball.swift */,
 				06DC58DD27746130000BFC9B /* Assets.xcassets */,
 				06DC58DF27746130000BFC9B /* LaunchScreen.storyboard */,
 				06DC58E227746130000BFC9B /* Info.plist */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = Homework022;
+			packageProductDependencies = (
+				06DC58E9277462C2000BFC9B /* CodableCSV */,
+			);
 			productName = Homework022;
 			productReference = 06DC58D12774612F000BFC9B /* Homework022.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 06DC58C82774612F000BFC9B;
+			packageReferences = (
+				06DC58E8277462C2000BFC9B /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			productRefGroup = 06DC58D22774612F000BFC9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062008D827759FBE0021DA9E /* BallDetailViewController.swift in Sources */,
+				06DC58EC27746890000BFC9B /* Ball.swift in Sources */,
 				06DC58D92774612F000BFC9B /* ViewController.swift in Sources */,
 				06DC58D52774612F000BFC9B /* AppDelegate.swift in Sources */,
 				06DC58D72774612F000BFC9B /* SceneDelegate.swift in Sources */,
+				06DC58EE27747868000BFC9B /* BallTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06DC58E8277462C2000BFC9B /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06DC58E9277462C2000BFC9B /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06DC58E8277462C2000BFC9B /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06DC58C92774612F000BFC9B /* Project object */;
 }
